@@ -8,9 +8,14 @@
 <body>
 <h1>My Thoughts</h1>
 <h3>Enter text below:</h3>
-<textarea ></textarea>
+<textarea id="output"></textarea>
 <div style="text-align: center;">
-   <input type="button" value="Submit!">
+<input type="button" value="Submit" onclick="javascript:eraseText();">   
+<script >
+function eraseText() {
+    document.getElementById("output").value = "";
+}
+ </script>
 </div>
 
 </body>

@@ -12,6 +12,37 @@
 <!-- Title of page -->
 <h1> Student Profile</h1>
 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">My Info</a>
+    <a href="#">My Work</a>
+    <a href="#">My Thoughts</a>
+    <a href = "#"> My Pictures </a>
+  </div>
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }</script>
+</div>
+
 <div class = profPic>
 <img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
 </div>
@@ -20,8 +51,12 @@
 This box displays your tickets
 </div>
 
+<div class = "Name">
 <h2> Name: </h2>
+</div>
+<div class = "profileDetails">
 <h2> Team: </h2>
 <h2> Mentor: </h2>
+</div>
 </body>
 </html>

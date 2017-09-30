@@ -7,27 +7,8 @@
 <title>Student Profile</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-</head>
 
-<body>
-<!-- Title of page -->
-
-
-<div class = "parent" class="container">
-
-<div class = "row">
-
-<div class="dropdown" "align-top" "col-lg-6">
-
-  <button onclick="myFunction()" class="dropbtn align-baseline">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="studentProfile.html">My Info</a>
-    <a href="myWork.html">My Work</a>
-    <a href="MyThoughts.html">My Thoughts</a>
-    <a href = "Gallery.html"> My Pictures </a>
-  </div>
-
-  <script>
+<script>
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
@@ -48,27 +29,71 @@
       }
     }
   }</script>
-  </div>
-  <div class = "col-lg-6">
-<h1 class = "align-baseline"> My Profile</h1>
-</div>
-  </div> 
+</head>
+
+<body>
+
+<div class = "parent" class="container">
+
+	<div class = "row">
+
+		<div class="dropdown" "align-top" "col-md-1">
+
+  			<button onclick="myFunction()" class="dropbtn align-baseline">Menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				<a href="studentProfile.html">My Info</a>
+    				<a href="myWork.html">My Work</a>
+    				<a href="MyThoughts.html">My Thoughts</a>
+    				<a href = "Gallery.html"> My Pictures </a>
+  				</div>
+		</div>
+ 		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+ 		<div class = "col-md-2">
+			<h1 class = "align-baseline"> My Profile</h1>
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+	</div> 
   
 </div>
 
 <div class = profPic class="align-baseline">
-<img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
+	<img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
 </div>
 
 <div class = "Name">
-<h2><%= FirstName+" "+LastName %> </h2>
+	<h2><%= FirstName+" "+LastName %> </h2>
 </div>
 
-</div>
+
 
 <div class = "profileDetails">
-<h2 text-align="center"> Grade: <%= Grade %> </h2>
-<h2 text-align="center"> Tickets: <%= Tickets %> </h2>
+	<h2 text-align="center"> Grade: <%= Grade %> </h2>
+	<h2 text-align="center"> Tickets: <%= Tickets %> </h2>
 </div>
 
 </body>

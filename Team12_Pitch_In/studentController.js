@@ -66,6 +66,7 @@ function studentProfile(req, res) {
     res.render("studentProfile", result[0])});
 }
 
+
 // function getMonth (monthNumber) {
 //     return (Number.isInteger(monthNumber) && (monthNumber <= (months.length - 1))) ? months[monthNumber] : '';
 // };

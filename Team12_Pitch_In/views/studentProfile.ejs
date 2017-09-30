@@ -16,14 +16,18 @@
 <div class = "parent" class="align-baseline">
 <div class="dropdown" class="align-top">
   <button onclick="myFunction()" class="dropbtn align-baseline">Menu</button>
+  <!-- <form action="/profile/MyThoughts.html" method="post" style="border:1px solid #ccc"> -->
   <div id="myDropdown" class="dropdown-content">
     <a href="studentProfile.html">My Info</a>
-    <a href="myWork.html">My Work</a>
-    <a href="MyThoughts.html">My Thoughts</a>
-    <a href = "Gallery.html"> My Pictures </a>
+    <a href="/myWork.html">My Work</a>
+    <a href="/MyThoughts.html">My Thoughts</a>
+    <a href = "/Gallery.html"> My Pictures </a>
   </div>
+  <!-- </form> -->
+
 
   <script>
+
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
@@ -33,7 +37,6 @@
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {

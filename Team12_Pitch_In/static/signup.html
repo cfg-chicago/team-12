@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -60,7 +61,7 @@ button {
 
 <h2>Signup Form</h2>
 
-<form action="login.html" style="border:1px solid #ccc">
+<form action="api/user/signup" method="post" style="border:1px solid #ccc">
   <div class="container">
 
   	<label><b>Account Type</b></label> <br>
@@ -88,7 +89,7 @@ button {
 
     <div class="clearfix">
 
-    			<button type="submit" class="signupbtn" onclick="insertStudent()">Sign Up</button>
+    			<button type="submit" class="signupbtn" onclick="createStudent()">Sign Up</button>
       		<!-- <button type="submit" class="cancelbtn">Cancel</button> -->
       		<button type="submit" class="cancelbtn"><a href="usertype.html" >Cancel</a></button>
 
@@ -96,31 +97,12 @@ button {
   </div>
 </form>
 
-<script type="text/javascript">
-function insertStudent(){
-  var mysql = require('mysql');
+<script>
+function createStudent(){
 
-  var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "pass",
-    database: "pitch_in",
-    port:"3306"
-  });
-
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "INSERT INTO students VALUES ('"+req.body.first+"','"+req.body.last+"','"+req.body.user+"','"+req.body.pass+"','"+req.body.grade+"', 0)";
-    con.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log("1 record inserted");
-      alert('Success! Student added');
-    });
-  });
-  con.end();
 }
 </script>
+
 
 </body>
 </html>

@@ -8,23 +8,6 @@
 	</head>
 <body>
 <h3>Blogs I have written</h3>
-<form action="/Blogs.html">
-<button type="button" id="b" onclick="date()">Blogs!
-</button>
-<script>
-function date() {
-	var d = new Date();
-	var day = d.getDay().toString();
-	var month = d.getMonth().toString();
-	var year = d.getFullYear().toString();
-	var slash = "/";
-	var f = month.concat(slash);
-	var g = f.concat(day);
-	var h = g.concat(slash);
-	var j = h.concat(year);
-    document.getElementById("b").innerHTML = j;
-}
-</script> 
-</form>
+<a href="Blogs.html"><button>New Blog!</button></a>
 </body>
 </html>

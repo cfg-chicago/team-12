@@ -53,42 +53,74 @@ button {
     }
 }
 </style>
+
+
+
 <body>
 
 <h2>Signup Form</h2>
 
 <form action="login.html" style="border:1px solid #ccc">
   <div class="container">
-  	
+
   	<label><b>Account Type</b></label> <br>
   	<input type="radio" name="userType" value="student">Student <br>
 	<input type="radio" name="userType" value="mentor">Mentor <br>
 	<input type="radio" name="userType" value="parent">Parent <br><br>
-  
+
     <label><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="firstName" required>
+    <input type="text" placeholder="Enter First Name" name="firstName" id="first" required>
 
     <label><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="lastName" required>
+    <input type="text" placeholder="Enter Last Name" name="lastName" id="last" required>
 
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
+    <input type="text" placeholder="Enter Username" name="username" id="user" required>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
 
     <label><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
+    <label><b>Grade</b></label>
+    <input type="text" placeholder="Grade" name="grade" id="grade" required>
+
     <div class="clearfix">
 
-    			<button type="submit" class="signupbtn">Sign Up</button>
+    			<button type="submit" class="signupbtn" onclick="insertStudent()">Sign Up</button>
       		<!-- <button type="submit" class="cancelbtn">Cancel</button> -->
       		<button type="submit" class="cancelbtn"><a href="usertype.html" >Cancel</a></button>
 
     </div>
   </div>
 </form>
+
+<script type="text/javascript">
+function insertStudent(){
+  var mysql = require('mysql');
+
+  var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "pass",
+    database: "pitch_in",
+    port:"3306"
+  });
+
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    var sql = "INSERT INTO students VALUES ('"+req.body.first+"','"+req.body.last+"','"+req.body.user+"','"+req.body.pass+"','"+req.body.grade+"', 0)";
+    con.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("1 record inserted");
+      alert('Success! Student added');
+    });
+  });
+  con.end();
+}
+</script>
 
 </body>
 </html>

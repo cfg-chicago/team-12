@@ -57,8 +57,14 @@ button {
 
 <h2>Signup Form</h2>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="login.html" style="border:1px solid #ccc">
   <div class="container">
+  	
+  	<label><b>Account Type</b></label> <br>
+  	<input type="radio" name="userType" value="student">Student <br>
+	<input type="radio" name="userType" value="mentor">Mentor <br>
+	<input type="radio" name="userType" value="parent">Parent <br><br>
+  
     <label><b>First Name</b></label>
     <input type="text" placeholder="Enter First Name" name="firstName" required>
 
@@ -75,7 +81,9 @@ button {
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
     <div class="clearfix">
+      <form action="usertype.html">
       <button type="button" class="cancelbtn">Cancel</button>
+      </form>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>

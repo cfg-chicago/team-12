@@ -7,6 +7,39 @@
 		
 	</head>
 <body>
+<div class = "parent" class="align-baseline">
+<div class="dropdown" class="align-top">
+  <button onclick="myFunction()" class="dropbtn align-baseline">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="studentProfile.html">My Info</a>
+    <a href="myWork.html">My Work</a>
+    <a href="MyThoughts.html">My Thoughts</a>
+    <a href = "Gallery.html"> My Pictures </a>
+  </div>
+  
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }</script>
+</div>
+
 <h3>Blogs I have written</h3>
 <a href="Blogs.html"><button>New Blog!</button></a>
 </body>

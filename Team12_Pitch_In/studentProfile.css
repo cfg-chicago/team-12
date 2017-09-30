@@ -33,6 +33,7 @@ h1 {
   width: 100px;
   position: static;
   display: inline-block;
+  background: green;
 }
 /* Dropdown Button */
 .dropbtn {

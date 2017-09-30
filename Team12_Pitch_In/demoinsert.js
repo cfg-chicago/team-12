@@ -1,10 +1,11 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "54.234.125.28",
+  host: "localhost",
   user: "root",
   password: "pass",
-  database: "team12"
+  database: "pitch_in",
+  port:"3306"
 });
 
 con.connect(function(err) {
@@ -16,3 +17,5 @@ con.connect(function(err) {
     console.log("1 record inserted");
   });
 });
+con.end();
+

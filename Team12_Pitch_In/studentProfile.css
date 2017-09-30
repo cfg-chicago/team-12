@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+.boxed {
+  border: 1px solid green ;
+  height: 5%;
+  width: 5%;
+  float: left;
+}
+#profilePic {
+	height: 10%;
+	width: 10%;
+	
+}
+.profPic {
+	float: left;
+}

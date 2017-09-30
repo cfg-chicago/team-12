@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="/studentProfile.css">
 <meta charset="ISO-8859-1">
 <title>Student Profile</title>
-
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 
@@ -47,23 +46,71 @@
       }
     }
   }</script>
+</head>
+
+<body background="http://cdn.wallpapersafari.com/37/15/O9MYe3.jpg">
+
+<div class = "parent" class="container">
+
+	<div class = "row">
+
+		<div class="dropdown" "align-top" "col-md-1">
+
+  			<button onclick="myFunction()" class="dropbtn align-baseline">Menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				<a href="studentProfile.ejs">My Info</a>
+    				<a href="myWork.html">My Work</a>
+    				<a href="MyThoughts.html">My Thoughts</a>
+    				<a href = "Gallery.html"> My Pictures </a>
+  				</div>
+		</div>
+ 		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+ 		<div class = "col-md-2">
+			<h1 class = "align-baseline"> My Profile</h1>
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+		<div class = "col-md-1">
+			<!--empty-->
+		</div>
+	</div>
+
 </div>
 
 <div class = profPic class="align-baseline">
-<img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
-</div>
-
-<div class = "boxed" class="align-baseline">
-This box displays your tickets
+	<img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
 </div>
 
 <div class = "Name">
-<h2><%= FirstName+LastName %> </h2>
+	<h2><%= FirstName+" "+LastName %> </h2>
 </div>
-</div>
+
+
+
 <div class = "profileDetails">
-<h2> Grade: <%= Grade %> </h2>
-<h2> Tickets: <%= Tickets %> </h2>
+	<h2 text-align="center"> Grade: <%= Grade %> </h2>
+	<h2 text-align="center"> Tickets: <%= Tickets %> </h2>
 </div>
 
 </body>

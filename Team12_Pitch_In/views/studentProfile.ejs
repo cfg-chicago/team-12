@@ -11,7 +11,7 @@
 
 <body>
 <!-- Title of page -->
-<h1> Student Profile</h1>
+
 
 <div class = "parent" class="align-baseline">
 <div class="dropdown" class="align-top">
@@ -45,22 +45,18 @@
     }
   }</script>
 </div>
-
+<h1> My Profile</h1>
 <div class = profPic class="align-baseline">
 <img id = "profilePic" src="https://www.vccircle.com/wp-content/uploads/2017/03/default-profile.png"  alt="Profile Picture" />
 </div>
 
-<div class = "boxed" class="align-baseline">
-This box displays your tickets
-</div>
-
 <div class = "Name">
-<h2><%= FirstName+LastName %> </h2>
+<h2><%= FirstName+" "+LastName %> </h2>
 </div>
 </div>
 <div class = "profileDetails">
-<h2> Grade: <%= Grade %> </h2>
-<h2> Tickets: <%= Tickets %> </h2>
+<h2 text-align="center"> Grade: <%= Grade %> </h2>
+<h2 text-align="center"> Tickets: <%= Tickets %> </h2>
 </div>
 
 </body>

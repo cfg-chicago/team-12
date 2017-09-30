@@ -3,37 +3,25 @@
 
 
 .Name{
-	display: inline-block;
+	text-align:center;
 }
 #profilePic {
 	height: 10%;
 	width: 100px;
-	position: static;
 	
 }
 .profPic {
-	
-	position: static;
-	overflow: auto; 
-  display: inline-block;
-}
-
-.profileDetails {
-	border: 1px solid black; 
-	float: center;
-	position: static: 
+	text-align: center;
+	position:relative;
+  	
 }
 
 h1 {
 	text-align: center;
 }
-.boxed {
-  border: 1px solid black ;
-  height: 5%;
-  width: 100px;
-  position: static;
-  display: inline-block;
-  background: green;
+.profileDetails {
+  text-align: center;
+  margin: auto;
 }
 /* Dropdown Button */
 .dropbtn {

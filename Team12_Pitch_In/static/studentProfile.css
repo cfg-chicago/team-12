@@ -4,6 +4,7 @@
 
 .Name{
 	text-align:center;
+	color: white;
 }
 #profilePic {
 	height: 10%;
@@ -17,11 +18,13 @@
 }
 
 h1 {
-	text-align: right;
+	text-align: center;
+	color: white;
 }
 .profileDetails {
   text-align: center;
   margin: auto;
+  color: white;
 }
 /* Dropdown Button */
 .dropbtn {

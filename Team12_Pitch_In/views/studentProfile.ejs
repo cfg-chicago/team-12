@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" href="studentProfile.css">
+<link rel="stylesheet" href="/studentProfile.css">
 <meta charset="ISO-8859-1">
 <title>Student Profile</title>
 
@@ -22,9 +22,9 @@
     <a href="MyThoughts.html">My Thoughts</a>
     <a href = "Gallery.html"> My Pictures </a>
   </div>
-  
+
   <script>
-  /* When the user clicks on the button, 
+  /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
@@ -55,12 +55,12 @@ This box displays your tickets
 </div>
 
 <div class = "Name">
-<h2> Name: </h2>
+<h2><%= FirstName+LastName %> </h2>
 </div>
 </div>
 <div class = "profileDetails">
-<h2> Team: </h2>
-<h2> Mentor: </h2>
+<h2> Grade: <%= Grade %> </h2>
+<h2> Tickets: <%= Tickets %> </h2>
 </div>
 
 </body>

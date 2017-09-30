@@ -1,6 +1,6 @@
 
 
-
+<html ng-app="mainApp">
 <head>	
 		<meta charset="UTF-8">
 		<title>Pitch In</title>
@@ -8,7 +8,7 @@
 		<script src = "angular-route.min.js"></script>
 		<script src = "conotroller.js"></script>
 </head>
-<div ng-controller="userCtrl">
+<body ng-controller="userCtrl">
 
 <form action="/" id = "userSelection">
 <input type="radio" name="userType" value="student">Student <br>
@@ -17,4 +17,5 @@
 <button type = "button" ng-click="submit()">Next</button>
 </form>
 
-</div>
+</body>
+</html>
